@@ -1,7 +1,8 @@
 --SELECT * FROM Customers;                                 --Sql is case insensitive
                                                            --inner join only brings the matching records
 --SELECT [CustomerName] Name FROM Customers                --left join brings the records of the left side						                                                   --right join does opposite of left join
-							   --DTO Data Transformation Object			                         --Select * from Customers where City = "London"       
+							   --DTO Data Transformation Object			                         
+--Select * from Customers where City = "London"       
 
 --Select * from Products 
 
