@@ -1,0 +1,53 @@
+--SELECT * FROM Customers;                                 --Sql is case insensitive
+                                                           --inner join only brings the matching records
+--SELECT [CustomerName] Name FROM Customers                --left join brings the records of the left side						                                                   --right join does opposite of left join
+							   --DTO Data Transformation Object			                         --Select * from Customers where City = "London"       
+
+--Select * from Products 
+
+--Select * from Products where categoryId = 1 or categoryId = 3		
+
+--Select * from Products where categoryId = 1 and SupplierId >= 10
+
+--select * from Products order by ProductName
+
+--select * from Products order by categoryid
+
+--select * from Products order by categoryid,productname
+
+--SELECT * FROM Products ORDER BY Price ASC  --Ascending
+
+--SELECT * FROM Products ORDER BY Price DESC  --Descending
+
+--SELECT * FROM Products WHERE CategoryId IS 1 ORDER BY Price DESC
+
+--SELECT COUNT(*) FROM Products
+
+--SELECT COUNT(*) FROM Products WHERE CategoryId IS 2
+
+--select categoryID from Products group by CategoryId 
+
+--select categoryID, count(*) from Products group by CategoryId
+
+--select categoryID, count(*) from Products group by CategoryId having count(*)<10
+
+--select categoryID, count(*) from Products where Price>10 group by CategoryId having count(*)<10
+
+--select * from Products inner join Categories 
+
+--select * from Products inner join Categories on Products.CategoryID = Categories.CategoryID
+
+--select Products.ProductID, Products.ProductName, Categories.CategoryName from Products inner join Categories on Products.CategoryID = Categories.CategoryID
+
+--select Products.ProductID, Products.ProductName, Products.Price, Categories.CategoryName from Products inner join Categories on Products.CategoryID = Categories.CategoryID where Products.Price > 10
+
+--SELECT * FROM Products p LEFT JOIN ORDERDETAILS od ON p.ProductID = od.ProductID  
+
+--select * from Customers c inner join Orders o on c.CustomerID = o.CustomerID
+
+--select * from Customers c left join Orders o on c.CustomerID = o.CustomerID
+
+--select * from Customers c left join Orders o on c.CustomerID = o.CustomerID where o.CustomerID is null
+
+--SELECT * FROM Products p INNER JOIN ORDERDETAILS od ON p.ProductID = od.ProductID INNER JOIN Orders o ON o.OrderID = od.OrderID
+
